@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatainer{
+            background-color: brown;
+            color: black;
+            padding: 3px 3px;
+            border: 1px solid black;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        #time{
+           font-weight: bold;
+         text-shadow:10px 3px 3px rgb(38, 128, 3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatainer">
+       <marquee behavior="" direction="">  current time is <span id="time"></span></marquee>
+    </div>
+    <script>
+        // let newdate=new Date();
+        let newdate = new Date(2021, 12, 5, 7, 34, 56);
+        console.log(newdate);
+
+        let yr = newdate.getFullYear();
+        console.log(" the current year is" + yr);
+
+        setInterval(updatetime, 1000);
+
+        function updatetime() {
+
+            time.innerHTML=new Date();
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

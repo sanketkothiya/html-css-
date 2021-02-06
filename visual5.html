@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatainer" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>about more</li>
+            <li>contact us</li>
+        </ul>
+    </div> 
+    <div class="conatainer">
+        hello saket
+    </div>
+    <script>
+        let main=document.getElementById("main"); 
+        console.log(main);
+
+        let nav=document.getElementById("nav"); 
+        console.log(nav);
+
+        let conatainer=document.getElementsByClassName("conatainer"); 
+        console.log(conatainer);
+
+        let sel=document.querySelectorAll("#nav>li"); 
+        console.log("hello sanket",sel);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+    //     function greet(name,byetext){
+    //         console.log("your name is "  +name+ " " +byetext);
+        
+    // }
+    // interval=setTimeout(greet,5000,"sanket","how are you");
+    // console.log(interval);
+    // setInterval(greet,1000,"sanket","good night");
+     function greet(){
+         time=new Date();
+         console.log(time);
+         document.getElementById('time').innerHTML=time;
+     
+     }
+     setInterval(greet,1000); 
+    </script>
+</body>
+</html>
